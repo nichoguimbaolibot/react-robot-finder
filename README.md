@@ -1,5 +1,5 @@
-# robofriends
-Tutorial for udemy course - React
+# Robot Finder
+Typescript Robot Finder
 To run the project:
 
 1. Clone this repo
