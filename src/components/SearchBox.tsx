@@ -1,8 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 
 // interface ISearchBoxProps {
 //   searchfield: string,
 //   props: any
+// }
+
+// interface ISearchBoxStatelessProps {
+//   searchfield: string,
+//   onChange?(event: React.SyntheticEvent<HTMLInputElement>): void,
+//   onMouseOver?(event: React.SyntheticEvent<HTMLInputElement>): void,
 // }
 
 const SearchBox: React.SFC<any> = (props) => {

@@ -1,10 +1,10 @@
-import React, { ReactNode } from 'react';
+import * as React from 'react';
 
-interface IScrollProps {
-  children: ReactNode,
+interface IScrollStatelessProps {
+  children?: JSX.Element,
 }
 
-const Scroll = ({ children }: IScrollProps) => {
+const Scroll: React.SFC<IScrollStatelessProps> = ({ children }) => {
   return (
     <div style={{ overflow: 'scroll', border: '5px solid black', height: '800px'}}>
       {children}
