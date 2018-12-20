@@ -24,8 +24,8 @@ export default function App(): JSX.Element {
       <Route path="/" exact={true} render={props => {
         return (
           <ul>
-            <li><Link to="/robofinder">RoboFinder</Link></li>
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/robofinder" style={{color: "#ffffff"}}>RoboFinder</Link></li>
+            <li><Link to="/" style={{color: "#ffffff"}}>Home</Link></li>
           </ul>
         )
       }} />
