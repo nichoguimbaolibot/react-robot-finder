@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
@@ -19,14 +19,9 @@ interface IAppState {
   searchfield: string,
 }
 
-declare namespace JSX {
-  interface IntrinsicElements {
-    SearchBox: { onChange: HTMLInputElement, }
-  }
-}
 
 
-class App extends Component<IAppProps, IAppState> {
+class App extends React.Component<IAppProps, IAppState> {
     state = {
       robots: [],
       searchfield: ''
@@ -38,8 +33,8 @@ class App extends Component<IAppProps, IAppState> {
       .then(robots => {this.setState({ robots })});
   }
 
-  handleSearchChange = (event: any):void => {
-    this.setState({ searchfield: event.target.value })
+  handleSearchChange = (event: React.SyntheticEvent<HTMLInputElement>): void => {
+    this.setState({ searchfield: event.currentTarget.value })
   }
 
   get filteredRobots() {
@@ -52,7 +47,7 @@ class App extends Component<IAppProps, IAppState> {
     return filteredRobots
   }
 
-  render() {
+  render(): JSX.Element {
     let { robots, searchfield } = this.state;
     
     return !robots.length ?
