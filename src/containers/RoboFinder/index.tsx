@@ -2,7 +2,7 @@ import * as React from 'react';
 import CardList from './components/CardList';
 import SearchBox from '../../components/SearchBox';
 import Scroll from './components/Scroll';
-import '../../css/rootApp/App.css';
+import '../../css/rootApp/App.scss';
 
 export interface IRobot {
   id: number,
