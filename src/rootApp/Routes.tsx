@@ -5,7 +5,7 @@ const RoboFinder = React.lazy(() => import('../containers/RoboFinder'))
 export const routes = () => [
   {
       path: '/robofinder',
-      component: RoboFinder,
+      Component: RoboFinder,
       exact: true,
     }
   ]
