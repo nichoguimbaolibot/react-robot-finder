@@ -21,7 +21,7 @@ interface IAppState {
 
 
 
-class App extends React.Component<IAppProps, IAppState> {
+class RoboFinder extends React.Component<IAppProps, IAppState> {
     state = {
       robots: [],
       searchfield: ''
@@ -64,4 +64,4 @@ class App extends React.Component<IAppProps, IAppState> {
   }
 }
 
-export default App;
+export default RoboFinder;
